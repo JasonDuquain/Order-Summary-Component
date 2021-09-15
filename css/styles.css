@@ -22,13 +22,12 @@ body {
   font-family: 'Red Hat Display', sans-serif;
   font-size: 100%;
   line-height: 1.4;
-  background-color: var(--pale-blue);
-  background-image: url(../images/pattern-background-desktop.svg);
-  background-repeat: repeat-x;
+  background: url(../images/pattern-background-desktop.svg) var(--pale-blue) 0% 0%/contain no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 2rem; }
+  min-height: 100vh; 
+}
 
 .container {
   width: 450px;

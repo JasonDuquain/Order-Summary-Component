@@ -1,0 +1,130 @@
+// Weights: 500, 700, 900
+
+// overwrite the readme file with a custom one..you can use readme-template as a starting point
+
+
+:root {
+  box-sizing: border-box;
+
+	--gray-100: hsl(204, 45%, 98%);
+  --gray-200: hsl(210, 38%, 95%);
+  --gray-300: hsl(214, 32%, 91%);
+  --gray-400: hsl(211, 25%, 84%);
+  --gray-500: hsl(214, 20%, 69%);
+  --gray-600: hsl(216, 15%, 52%);
+  --gray-700: hsl(218, 17%, 35%);
+  --gray-800: hsl(218, 23%, 23%);
+  --gray-900: hsl(220, 26%, 14%);
+
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desat-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --mobile: 375;
+  --desktop: 1440;
+  --border-radius: 20px;
+}
+
+body {
+  color: var(--gray-800);
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 100%;
+  line-height: 1.4;
+  background-color: var(--pale-blue);
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: repeat-x;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.container {
+  width: 450px;
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+
+  &__background {
+    flex: 0 0 220px;
+    background: url(../images/illustration-hero.svg) 50% 50%/cover no-repeat;
+    border-radius: 20px 20px 0 0;
+  }
+
+  &__details {
+    --border-radius: 14px;
+
+    padding: 1.2rem 2rem 2rem 2rem;
+    font-size: .9rem;
+  }
+
+  &__heading {
+    font-size: 1.4rem;
+    color: var(--dark-blue);
+    font-weight: 900;
+  }
+
+  &__summary {
+    color: var(--gray-600);
+    text-align: center;
+  }
+
+  &__plan {
+    display: flex;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+  }
+
+  &__icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  &__price-plan {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+
+  &__annual {
+    font-size: .85rem;
+    font-weight: 900;
+    color: var(--dark-blue);
+  }
+
+  &__price {
+    color: var(--gray-600);
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: .7rem;
+    margin-left: auto;
+  }
+
+  &__pay-link {
+    font-size: .75rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    padding: .75rem;
+    background-color: var(--bright-blue);
+    border-radius: var(--border-radius);
+    box-shadow: 0px 23px 15px 0 var(--pale-blue);
+  
+  }
+
+  &__cancel-link {
+    text-decoration: none;
+    color: var(--gray-600);
+    font-weight: 700;
+  }
+}
